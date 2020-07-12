@@ -1,0 +1,18 @@
+00		// wait for reading value from the memory address and storing in register A
+A0		// read mouse status and write it into register A
+02		// write value of register A into memory address
+C0		// read value from memory address and write it into LEDs, i.e. display the mouse status on the LEDs
+02		// write value of register A into memory address
+D2      // read value from memory address and write the 3rd bit of mouse status into the dot of 7-segment displays to indicate the initialisation
+00		// wait for reading value from the memory address and storing in register A
+A3		// read the value of mouse scrolling wheel and write it into register A
+02		// write value of register A into memory address
+C1		// read value from memory address and write it into LEDs, i.e. display the value of mouse scrolling wheel on the LEDs
+00      // wait for reading value from the memory address and storing in register A
+A1		// read mouse X and write it into register A
+01      // wait for reading value from the memory address and storing in register B
+A2		// read mouse Y and write it into register B
+02      // write value of register A into memory address
+D0		// read value from memory address and write it into 7-segment displays, i.e. display the mouse X on the 7-segment displays
+03      // write value of register B into memory address
+D1		// read value from memory address and write it into 7-segment displays, i.e. display the mouse Y on the 7-segment displays
